@@ -13,24 +13,24 @@ class Dog
         span.innerText = this.name
         span.addEventListener("click", () => DogController.showDog(this) )
         return span
-      }
+    }
     
-      imageEl(){
+    imageEl(){
         const img = document.createElement("img")
         img.src = this.image
         return img
-      }
-    
-      h2El(){
+    }
+
+    h2El(){
         const h2 = document.createElement("h2")
         h2.innerText = this.name
         return h2
-      }
-    
-      buttonEl(){
+    }
+
+    buttonEl(){
         const button = document.createElement("button")
         button.innerText = this.isGoodDog ? "Good Dog!" : "Bad Dog!"
         button.addEventListener("click", (e) => DogController.toggleGoodDog(this, e))
         return button
-      }
+    }
 }
